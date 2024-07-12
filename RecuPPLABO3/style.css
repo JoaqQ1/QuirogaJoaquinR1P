@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #e6e6e6;
+}
+.contenedorPrincipal,.contenedorAbm{
+    display: grid;
+    row-gap: 25px;
+    border: solid rgb(85, 82, 82);
+    border-radius: 3px;
+    position:fixed;
+    top: 10%;
+    left: 30%;
+    
+}
+.contenedorAbm{
+    display:grid;
+    row-gap: 35px;
+    justify-items: center;
+    justify-content: space-between;
+    position: fixed;
+    display: none;
+}
+.contenedor-tabla-persona{
+    display: grid;
+    border: solid rgb(85, 82, 82);
+    row-gap: 25px;
+    column-gap: 25px;
+    justify-content: center;
+}
+th,td{
+    border: solid rgb(85, 82, 82);
+}
+.contenedorAbm label{
+    display: block;
+    margin: 10px;
+    padding: 5px;
+}
+.contenedorAbm button{
+    display: inline;
+    
+}
+button{
+    border-radius: 3px;
+    margin: 10px;
+    padding: 5px;
+}
+.datos{
+    text-align: center;
+}

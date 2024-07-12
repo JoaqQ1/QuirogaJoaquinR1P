@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial_1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contenedorPrincipal" id="contenedor-principal">
+        <h1>Form Personas</h1>
+        <p> Filtrar por :
+            <select id="filtro-persona">
+                <option value="Todos">Todos</option>
+                <option value="Heroe">Heroe</option>
+                <option value="Villano">Villano</option>
+            </select>
+        </p>
+        <p>Calcular edad promedio: 
+            <span id="promedio-persona"></span>
+            <button id="btn-calcular">Calcular</button>
+        </p>
+
+        <div id="contenedor-columnas">
+            <h4>Mostrar columnas:</h4>
+            <label for="columna-id"><input type="checkbox" id="columna-id" checked>ID</label>
+            <label for="columna-nombre"><input type="checkbox" id="columna-nombre" checked>Nombre</label>
+            <label for="columna-apellido"><input type="checkbox" id="columna-apellido" checked>Apellido</label>
+            <label for="columna-edad"><input type="checkbox" id="columna-edad" checked>Edad</label>
+            <label for="columna-alterego"><input type="checkbox" id="columna-alterego" checked>Alter Ego</label>
+            <label for="columna-ciudad"><input type="checkbox" id="columna-ciudad" checked>Ciudad</label>
+            <label for="columna-publicado"><input type="checkbox" id="columna-publicado" checked>Publicado</label>
+            <label for="columna-enemigo"><input type="checkbox" id="columna-enemigo" checked>Enemigo</label>
+            <label for="columna-robos"><input type="checkbox" id="columna-robos" checked>Robos</label>
+            <label for="columna-asesinatos"><input type="checkbox" id="columna-asesinatos" checked>Asesinatos</label>
+        </div>
+
+        <div class="contenedor-tabla-persona" id="tabla-persona">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="datos" name="columna-id">ID</th>
+                        <th class="datos" name="columna-nombre">Nombre</th>
+                        <th class="datos" name="columna-apellido">Apellido</th>
+                        <th class="datos" name="columna-edad">Edad</th>
+                        <th class="datos" name="columna-alterego">Alter Ego</th>
+                        <th class="datos" name="columna-ciudad">Ciudad</th>
+                        <th class="datos" name="columna-publicado">Publicado</th>
+                        <th class="datos" name="columna-enemigo">Enemigo</th>
+                        <th class="datos" name="columna-robos">Robos</th>
+                        <th class="datos" name="columna-asesinatos">Asesinatos</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaPersonas">
+                </tbody>
+            </table>
+            <button id="btn-agregar">Agregar persona</button>
+        </div>
+    </div>
+    <div class="contenedorAbm" id="contenedor-abm">
+        <h1 id="titulo-abm">Formulario ABM</h1>
+        <div id="data">
+            
+            <label>ID: <span id="id"></span></label>
+            <label>Nombre: <input required class='data-persona'type="text" id="nombre"></label> 
+            <label>Apellido: <input  required class='data-persona' type="text" id="apellido"></label> 
+            <label>Edad: <input  required class='data-persona' id="edad"></label> 
+            <select id="tipo">Tipo
+                <option value="--" >--</option>
+                <option value="Heroe">Heroe</option>
+                <option value="Villano">Villano</option>
+            </select>
+            <label display="none">Atributo1: <input required class='data-persona' type="text" id="atributo1"></label> 
+            <label display="none">Atributo2: <input required class='data-persona' type="text" id="atributo2"></label> 
+            <label display="none">Atributo3: <input  required class='data-persona' type="text" id="atributo3"></label>
+            <button id="btn-cancelar">Cancelar</button>
+            <button id="btn-aceptar">Aceptar</button>
+            <button id="btn-modificar">Modificar</button>
+            <button id="btn-eliminar">Eliminar</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+</html>
